@@ -137,9 +137,13 @@ export default function ArticlesPage() {
               <Select
                 value={selectedCategory}
                 onValueChange={setSelectedCategory}
+                onChange={(value) => setSelectedCategory(value)}
               >
                 <SelectTrigger className="w-48">
-                  <SelectValue placeholder="Select category" />
+                  <SelectValue
+                    value={selectedCategory}
+                    placeholder="Select category"
+                  />
                 </SelectTrigger>
                 <SelectContent>
                   {categories.map((category) => (
@@ -149,7 +153,6 @@ export default function ArticlesPage() {
                       onChange={() => {
                         setSelectedCategory(category.value);
                       }}
-                      setOpen={() => {}}
                     >
                       {category.label}
                     </SelectItem>
@@ -158,7 +161,11 @@ export default function ArticlesPage() {
               </Select>
 
               {/* sort*/}
-              <Select value={sortBy} onValueChange={setSortBy}>
+              <Select
+                value={sortBy}
+                onValueChange={setSortBy}
+                onChange={(value) => setSortBy(value)}
+              >
                 <SelectTrigger className="w-40">
                   <SelectValue placeholder={"Sort by"} />
                 </SelectTrigger>

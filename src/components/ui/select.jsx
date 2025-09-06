@@ -47,16 +47,24 @@ export function SelectTrigger({ children, open, setOpen }) {
 export function SelectValue({ value, placeholder }) {
   return (
     <span className="truncate">
-      {value ? value : <span className="text-gray-400">{placeholder}</span>}
+      {value != "all" && value ? (
+        value
+      ) : (
+        <span className="text-gray-400">{placeholder}</span>
+      )}
     </span>
   );
 }
 
-export function SelectContent({ open, children }) {
+export function SelectContent({ open, setOpen, onChange, children }) {
   if (!open) return null;
   return (
     <div className="absolute mt-2 w-48 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg z-50">
-      <ul className="py-1 max-h-60 overflow-auto">{children}</ul>
+      <ul className="py-1 max-h-60 overflow-auto">
+        {React.Children.map(children, (child) =>
+          React.cloneElement(child, { setOpen, onChange })
+        )}
+      </ul>
     </div>
   );
 }
