@@ -24,10 +24,7 @@ export function createPageUrl(page, params = {}) {
     default:
       return "/";
   }
-
-  
 }
-
 
 export function cn(...classes) {
   return classes.filter(Boolean).join(" ");

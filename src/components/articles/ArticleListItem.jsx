@@ -6,11 +6,9 @@ import { format } from "date-fns";
 import { createPageUrl } from "@/lib/utils";
 
 export default function ArticleListItem({ post }) {
+
   return (
-    <Link
-      href={createPageUrl(`Post?slug=${post.slug}`, `/articles/${post.slug}`)}
-      className="group block"
-    >
+    <Link href={createPageUrl(`Post`, post)} className="group block">
       <article className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 dark:border-gray-700">
         <div className="grid md:grid-cols-4 gap-6">
           {/* Image */}

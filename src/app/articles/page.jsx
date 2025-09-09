@@ -291,7 +291,7 @@ export default function ArticlesPage() {
       )}
 
       {!loading && filteredPosts.length === 0 && (
-        <div className="text-center py-12">
+        <div className="text-center py-12 flex flex-col items-center">
           <div className="text-6xl mb-4">📝</div>
           <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
             No articles found
@@ -305,7 +305,7 @@ export default function ArticlesPage() {
               setSearchTerm("");
               setSelectedCategory("all");
             }}
-            className="dark:border-gray-600 dark:hover:bg-gray-800"
+            className="dark:border-gray-600 dark:hover:bg-gray-800 items-center"
           >
             Clear Filters
           </Button>

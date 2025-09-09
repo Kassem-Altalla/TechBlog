@@ -7,10 +7,7 @@ import { format } from "date-fns";
 
 export default function ArticleCard({ post }) {
   return (
-    <Link
-      href={createPageUrl(`Post?slug=${post.slug || post.id}`)}
-      className="group block h-full"
-    >
+    <Link href={createPageUrl(`Post`, post)} className="group block h-full">
       <article className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700 h-full flex flex-col">
         {/* Image */}
         <div className="relative overflow-hidden bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-800 dark:to-blue-900/30 aspect-[16/9]">
@@ -19,6 +16,7 @@ export default function ArticleCard({ post }) {
               src={post.featured_image}
               alt={post.title}
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-cover group-hover:scale-105 transition-transform duration-500"
             />
           ) : (
