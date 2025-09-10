@@ -13,6 +13,7 @@ import Link from "next/link";
 import { format } from "date-fns";
 import ReactMarkdown from "react-markdown";
 import { posts } from "@/data/posts";
+import Image from "next/image";
 
 export default async function PostPage({ params }) {
   const { slug } = await params;
@@ -88,10 +89,11 @@ export default async function PostPage({ params }) {
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 py-6 border-y border-gray-200 dark:border-gray-700">
             <div className="flex items-center space-x-4">
               {post.author_avatar ? (
-                <img
+                <Image
                   src={post.author_avatar}
                   alt={post.author_name}
                   className="w-12 h-12 rounded-full object-cover"
+                  loading="lazy"
                 />
               ) : (
                 <div className="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center">
@@ -134,10 +136,11 @@ export default async function PostPage({ params }) {
         {/* Featured Image */}
         {post.featured_image && (
           <div className="mb-12">
-            <img
+            <Image
               src={post.featured_image}
               alt={post.title}
               className="w-full h-96 object-cover rounded-2xl shadow-lg"
+              loading="lazy"
             />
           </div>
         )}
@@ -172,10 +175,11 @@ export default async function PostPage({ params }) {
           <div className="bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700 mb-12">
             <div className="flex items-start space-x-4">
               {post.author_avatar ? (
-                <img
+                <Image
                   src={post.author_avatar}
                   alt={post.author_name}
                   className="w-16 h-16 rounded-full object-cover flex-shrink-0"
+                  loading="lazy"
                 />
               ) : (
                 <div className="w-16 h-16 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center flex-shrink-0">
@@ -212,10 +216,11 @@ export default async function PostPage({ params }) {
                   <article className="bg-gray-50 dark:bg-gray-700/50 rounded-xl overflow-hidden hover:shadow-md transition-all duration-300">
                     <div className="relative overflow-hidden bg-gradient-to-br from-gray-100 to-blue-50 dark:from-gray-700 dark:to-gray-800 aspect-[16/9]">
                       {relatedPost.featured_image ? (
-                        <img
+                        <Image
                           src={relatedPost.featured_image}
                           alt={relatedPost.title}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                          loading="lazy"
                         />
                       ) : (
                         <div className="w-full h-full flex items-center justify-center">

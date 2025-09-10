@@ -18,6 +18,7 @@ export default function ArticleCard({ post }) {
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
             />
           ) : (
             <div className="w-full h-full flex items-center justify-center">
@@ -60,6 +61,7 @@ export default function ArticleCard({ post }) {
                 width={32}
                 height={32}
                 className="w-8 h-8 rounded-full object-cover"
+                loading="lazy"
               />
             ) : (
               <div className="w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center">

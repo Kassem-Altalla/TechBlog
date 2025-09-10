@@ -7,7 +7,7 @@ import { Home, BookOpen, Cpu, Mail, Menu, X, Sun, Moon } from "lucide-react";
 export default function Header() {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+  const [mounted, setMounted] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   // Load Dark Mode from localStorage
@@ -19,6 +19,7 @@ export default function Header() {
     } else {
       document.documentElement.classList.remove("dark");
     }
+    setMounted(true);
   }, []);
 
   // Toggle Dark Mode
@@ -45,6 +46,8 @@ export default function Header() {
     "Blockchain",
     "Cloud Computing",
   ];
+
+  if (!mounted) return null; // يمنع mismatch
 
   return (
     <header className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-700/50 sticky top-0 z-50">

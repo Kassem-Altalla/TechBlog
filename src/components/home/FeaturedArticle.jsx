@@ -21,6 +21,7 @@ export default function FeaturedArticle({ post }) {
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 priority
+                loading="lazy"
               />
             ) : (
               <div className="w-full h-full flex items-center justify-center">
@@ -71,6 +72,7 @@ export default function FeaturedArticle({ post }) {
                     width={40}
                     height={40}
                     className="rounded-full object-cover"
+                    loading="lazy"
                   />
                 ) : (
                   <div className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center">

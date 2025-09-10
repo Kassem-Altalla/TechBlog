@@ -4,9 +4,9 @@ import { Clock, User, ArrowRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { format } from "date-fns";
 import { createPageUrl } from "@/lib/utils";
+import Image from "next/image";
 
 export default function ArticleListItem({ post }) {
-
   return (
     <Link href={createPageUrl(`Post`, post)} className="group block">
       <article className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 dark:border-gray-700">
@@ -15,7 +15,7 @@ export default function ArticleListItem({ post }) {
           <div className="md:col-span-1">
             <div className="relative overflow-hidden bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-800 dark:to-blue-900/30 aspect-[16/9] rounded-lg">
               {post.featured_image ? (
-                <img
+                <Image
                   src={post.featured_image}
                   alt={post.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -56,10 +56,11 @@ export default function ArticleListItem({ post }) {
             <div className="flex items-center justify-between">
               <div className="flex items-center space-x-3">
                 {post.author_avatar ? (
-                  <img
+                  <Image
                     src={post.author_avatar}
                     alt={post.author_name}
                     className="w-8 h-8 rounded-full object-cover"
+                    loading="lazy"
                   />
                 ) : (
                   <div className="w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center">
