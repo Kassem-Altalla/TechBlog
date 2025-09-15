@@ -5,7 +5,7 @@ import { Star, ArrowRight } from "lucide-react";
 export default function ProductCard({ product, priority = false }) {
   return (
     <Link
-      href={`/products/${product.slug}`}
+      href={`/product/${product.slug}`}
       className="group block"
       prefetch={false} // يقلل preload للروابط الثانوية
     >
@@ -16,7 +16,7 @@ export default function ProductCard({ product, priority = false }) {
             <Image
               src={product.cover_image}
               alt={product.name}
-              className="max-h-56 object-contain group-hover:scale-105 transition-transform duration-300"
+              className="max-h-56 object-fill group-hover:scale-105 transition-transform duration-300"
               width={400}
               height={224}
               priority={priority} // فقط الصور المهمة فوق الصفحة

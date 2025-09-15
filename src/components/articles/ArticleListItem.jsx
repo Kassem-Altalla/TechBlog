@@ -18,6 +18,7 @@ export default function ArticleListItem({ post }) {
                 <Image
                   src={post.featured_image}
                   alt={post.title}
+                  fill
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               ) : (
@@ -59,6 +60,8 @@ export default function ArticleListItem({ post }) {
                   <Image
                     src={post.author_avatar}
                     alt={post.author_name}
+                    width={32}
+                    height={32}
                     className="w-8 h-8 rounded-full object-cover"
                     loading="lazy"
                   />

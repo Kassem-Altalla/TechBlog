@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { format } from "date-fns";
 
 export default function FeaturedArticle({ post }) {
-  const href = `/post/${post.slug || post.id}`;
+  const href = `/articles/${post.slug || post.id}`;
 
   return (
     <Link href={href} className="group block">
@@ -20,7 +20,6 @@ export default function FeaturedArticle({ post }) {
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                priority
                 loading="lazy"
               />
             ) : (

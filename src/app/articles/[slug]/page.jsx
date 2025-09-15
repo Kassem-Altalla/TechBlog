@@ -92,6 +92,8 @@ export default async function PostPage({ params }) {
                 <Image
                   src={post.author_avatar}
                   alt={post.author_name}
+                  width={48}
+                  height={48}
                   className="w-12 h-12 rounded-full object-cover"
                   loading="lazy"
                 />
@@ -139,6 +141,8 @@ export default async function PostPage({ params }) {
             <Image
               src={post.featured_image}
               alt={post.title}
+              width={800}
+              height={450}
               className="w-full h-96 object-cover rounded-2xl shadow-lg"
               loading="lazy"
             />
@@ -178,6 +182,8 @@ export default async function PostPage({ params }) {
                 <Image
                   src={post.author_avatar}
                   alt={post.author_name}
+                  width={64}
+                  height={64}
                   className="w-16 h-16 rounded-full object-cover flex-shrink-0"
                   loading="lazy"
                 />

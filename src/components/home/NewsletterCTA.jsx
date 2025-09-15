@@ -4,9 +4,10 @@ import { useFormState } from "react-dom";
 import { Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { subscribe } from "@/app/actions/subscribe";
+import { useActionState } from "react";
 
 export default function NewsletterCTA() {
-  const [state, formAction] = useFormState(subscribe, {
+  const [state, formAction] = useActionState(subscribe, {
     success: false,
     message: "",
   });
@@ -34,12 +35,12 @@ export default function NewsletterCTA() {
               type="email"
               name="email"
               placeholder="Enter your email"
-              className="flex-1 px-4 py-3 rounded-lg text-gray-900 dark:bg-gray-800 dark:text-white dark:border-gray-600"
+              className="flex-1 px-4 py-3 rounded-lg bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-white dark:border-gray-600"
               required
             />
             <Button
               type="submit"
-              className="bg-white text-blue-600 hover:bg-gray-100 dark:bg-gray-200 dark:hover:bg-gray-300"
+              className="bg-blue-500 text-gray-900 hover:text-blue-600 hover:bg-blue-300 hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-800"
             >
               Subscribe
             </Button>

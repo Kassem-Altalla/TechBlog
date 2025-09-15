@@ -23,7 +23,7 @@ export default function CategoriesSection({ categories }) {
         {categories.map((category) => (
           <Link
             key={category.name}
-            href={`/articles?category=${category.slug}`} // أو حسب البنية عندك
+            href={`/articles?category=${category.slug}`}
             className="group"
           >
             <div className="bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-600 hover:shadow-lg transition-all duration-300">

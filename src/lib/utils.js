@@ -4,7 +4,7 @@ export function createPageUrl(page, params = {}) {
       return "/";
 
     case "Articles":
-      if (params.category) return `/articles/${params.category}`;
+      if (params.category) return `/articles?category=${params.category}`;
       return "/articles";
 
     case "Post":
@@ -19,7 +19,7 @@ export function createPageUrl(page, params = {}) {
 
     case "ProductDetails":
       if (!params.id) throw new Error("ProductDetails requires id");
-      return `/products/${params.id}`;
+      return `/product/${params.id}`;
 
     default:
       return "/";

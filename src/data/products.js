@@ -4,9 +4,9 @@ export const products = [
     slug: "ultrabook-pro-14",
     tagline: "Powerful, portable, and sleek.",
     category: "computer",
-    cover_image: "https://images.unsplash.com/photo-1612831455540-1f7c2a3d6e1b",
+    cover_image: "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9",
     brand_logo:
-      "https://logos-world.net/wp-content/uploads/2020/12/Apple-Logo.png",
+      "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
     features: [
       { title: "Lightweight", description: "Weighs only 1.2 kg.", icon: "📦" },
       {
@@ -34,9 +34,9 @@ export const products = [
     slug: "smartphone-x200",
     tagline: "Experience the next-gen smartphone.",
     category: "smartphone",
-    cover_image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+    cover_image: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf",
     brand_logo:
-      "https://upload.wikimedia.org/wikipedia/commons/3/31/Samsung_Logo.svg",
+      "https://logos-world.net/wp-content/uploads/2020/04/Samsung-Logo-700x394.png",
     features: [
       {
         title: "OLED Display",
@@ -61,12 +61,13 @@ export const products = [
   },
   {
     name: "NoiseCanceller Headphones",
-    slug: "noisecanceller-headphones",
+    slug: "noisecanceller-headphones x2",
     tagline: "Immerse yourself in pure sound.",
     category: "accessory",
-    cover_image: "https://images.unsplash.com/photo-1580894908361-2e5eb3b77f60",
+    cover_image:
+      "https://plus.unsplash.com/premium_photo-1679513691474-73102089c117",
     brand_logo:
-      "https://upload.wikimedia.org/wikipedia/commons/6/6e/Bose_logo.svg",
+      "https://logos-world.net/wp-content/uploads/2023/01/Bose-Logo-500x281.png",
     features: [
       {
         title: "Active Noise Cancellation",
@@ -96,7 +97,7 @@ export const products = [
     slug: "gtx-4090",
     tagline: "Unleash next-level gaming performance.",
     category: "component",
-    cover_image: "https://images.unsplash.com/photo-1610052045360-3e9d9b8e0f6a",
+    cover_image: "https://images.unsplash.com/photo-1555618565-9f2b0323a10d",
     brand_logo:
       "https://upload.wikimedia.org/wikipedia/commons/2/21/Nvidia_logo.svg",
     features: [
@@ -125,7 +126,7 @@ export const products = [
     slug: "smartwatch-series-5",
     tagline: "Your health companion on your wrist.",
     category: "wearable",
-    cover_image: "https://images.unsplash.com/photo-1600180758895-c3b19f3c8c45",
+    cover_image: "https://images.unsplash.com/photo-1617625802912-cde586faf331",
     brand_logo:
       "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
     features: [
@@ -154,16 +155,14 @@ export const products = [
     rating: 4.4,
     price_range: "$399 - $499",
   },
-
-  // يمكنك تكرار أو تعديل الخصائص لملء باقي الـ 20 منتج
   {
     name: "Mechanical Keyboard X2",
     slug: "mechanical-keyboard-x2",
     tagline: "Type faster, work smarter.",
     category: "accessory",
-    cover_image: "https://images.unsplash.com/photo-1612832021045-b4f8e1f0c9a4",
+    cover_image: "https://images.unsplash.com/photo-1587829741301-dc798b83add3",
     brand_logo:
-      "https://upload.wikimedia.org/wikipedia/commons/3/3e/Logitech_logo.svg",
+      "https://logos-world.net/wp-content/uploads/2020/11/Logitech-Logo-700x394.png",
     features: [
       {
         title: "RGB Lighting",
@@ -193,9 +192,9 @@ export const products = [
     slug: "4k-ultra-monitor-27",
     tagline: "Visual clarity like never before.",
     category: "computer",
-    cover_image: "https://images.unsplash.com/photo-1603732135143-0c9fa2160ebc",
+    cover_image: "https://images.unsplash.com/photo-1588200908342-23b585c03e26",
     brand_logo:
-      "https://upload.wikimedia.org/wikipedia/commons/1/1f/Dell_logo.svg",
+      "https://logos-world.net/wp-content/uploads/2020/08/Dell-Logo-700x394.png",
     features: [
       { title: "4K Resolution", description: "Ultra HD display.", icon: "🖥️" },
       {
@@ -222,9 +221,9 @@ export const products = [
     slug: "wireless-mouse-mx300",
     tagline: "Precision meets comfort.",
     category: "accessory",
-    cover_image: "https://images.unsplash.com/photo-1612831455540-1f7c2a3d6e1c",
+    cover_image: "https://images.unsplash.com/photo-1676315487574-0d456abe4e1e",
     brand_logo:
-      "https://upload.wikimedia.org/wikipedia/commons/3/3e/Logitech_logo.svg",
+      "https://logos-world.net/wp-content/uploads/2020/11/Logitech-Logo-700x394.png",
     features: [
       {
         title: "Ergonomic Design",
@@ -251,9 +250,9 @@ export const products = [
     slug: "vr-headset-visionx",
     tagline: "Step into a new reality.",
     category: "accessory",
-    cover_image: "https://images.unsplash.com/photo-1600180758895-c3b19f3c8c44",
+    cover_image: "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac",
     brand_logo:
-      "https://upload.wikimedia.org/wikipedia/commons/0/09/Oculus_logo.svg",
+      "https://logos-world.net/wp-content/uploads/2021/04/Oculus-Logo-500x281.png",
     features: [
       {
         title: "Immersive Display",
@@ -279,9 +278,9 @@ export const products = [
     slug: "ultrabook-pro-15",
     tagline: "Powerful, portable, and sleek.",
     category: "computer",
-    cover_image: "https://images.unsplash.com/photo-1612831455540-1f7c2a3d6e1b",
+    cover_image: "https://images.unsplash.com/photo-1584283598336-3162a018c0b4",
     brand_logo:
-      "https://logos-world.net/wp-content/uploads/2020/12/Apple-Logo.png",
+      "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
     features: [
       { title: "Lightweight", description: "Weighs only 1.2 kg.", icon: "📦" },
       {
@@ -309,9 +308,9 @@ export const products = [
     slug: "smartphone-x300",
     tagline: "Experience the next-gen smartphone.",
     category: "smartphone",
-    cover_image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+    cover_image: "https://images.unsplash.com/photo-1598965402089-897ce52e8355",
     brand_logo:
-      "https://upload.wikimedia.org/wikipedia/commons/3/31/Samsung_Logo.svg",
+      "https://logos-world.net/wp-content/uploads/2020/04/Samsung-Logo-700x394.png",
     features: [
       {
         title: "OLED Display",
@@ -339,9 +338,10 @@ export const products = [
     slug: "noisecanceller-headphones",
     tagline: "Immerse yourself in pure sound.",
     category: "accessory",
-    cover_image: "https://images.unsplash.com/photo-1580894908361-2e5eb3b77f60",
+    cover_image:
+      "https://plus.unsplash.com/premium_photo-1678066730788-fdc6d64b4679",
     brand_logo:
-      "https://upload.wikimedia.org/wikipedia/commons/6/6e/Bose_logo.svg",
+      "https://logos-world.net/wp-content/uploads/2023/01/Bose-Logo-500x281.png",
     features: [
       {
         title: "Active Noise Cancellation",
@@ -367,11 +367,11 @@ export const products = [
     price_range: "$299 - $349",
   },
   {
-    name: "Gaming Graphics Card GTX 4080",
+    name: "Gaming Graphics Card RTX 4080",
     slug: "gtx-4080",
     tagline: "Unleash next-level gaming performance.",
     category: "component",
-    cover_image: "https://images.unsplash.com/photo-1610052045360-3e9d9b8e0f6a",
+    cover_image: "https://images.unsplash.com/photo-1591488320449-011701bb6704",
     brand_logo:
       "https://upload.wikimedia.org/wikipedia/commons/2/21/Nvidia_logo.svg",
     features: [
@@ -400,7 +400,7 @@ export const products = [
     slug: "smartwatch-series-6",
     tagline: "Your health companion on your wrist.",
     category: "wearable",
-    cover_image: "https://images.unsplash.com/photo-1600180758895-c3b19f3c8c45",
+    cover_image: "https://images.unsplash.com/photo-1636551462974-c21487c0af66",
     brand_logo:
       "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
     features: [
@@ -434,9 +434,9 @@ export const products = [
     slug: "mechanical-keyboard-x1",
     tagline: "Type faster, work smarter.",
     category: "accessory",
-    cover_image: "https://images.unsplash.com/photo-1612832021045-b4f8e1f0c9a4",
+    cover_image: "https://images.unsplash.com/photo-1589578228447-e1a4e481c6c8",
     brand_logo:
-      "https://upload.wikimedia.org/wikipedia/commons/3/3e/Logitech_logo.svg",
+      "https://logos-world.net/wp-content/uploads/2020/11/Logitech-Logo-700x394.png",
     features: [
       {
         title: "RGB Lighting",
@@ -466,9 +466,9 @@ export const products = [
     slug: "4k-ultra-monitor-29",
     tagline: "Visual clarity like never before.",
     category: "computer",
-    cover_image: "https://images.unsplash.com/photo-1603732135143-0c9fa2160ebc",
+    cover_image: "https://images.unsplash.com/photo-1578091879915-33ee869e2cd7",
     brand_logo:
-      "https://upload.wikimedia.org/wikipedia/commons/1/1f/Dell_logo.svg",
+      "https://logos-world.net/wp-content/uploads/2020/08/Dell-Logo-700x394.png",
     features: [
       { title: "4K Resolution", description: "Ultra HD display.", icon: "🖥️" },
       {
@@ -494,9 +494,9 @@ export const products = [
     slug: "wireless-mouse-mx200",
     tagline: "Precision meets comfort.",
     category: "accessory",
-    cover_image: "https://images.unsplash.com/photo-1612831455540-1f7c2a3d6e1c",
+    cover_image: "https://images.unsplash.com/photo-1721744179382-0f8b0f19789e",
     brand_logo:
-      "https://upload.wikimedia.org/wikipedia/commons/3/3e/Logitech_logo.svg",
+      "https://logos-world.net/wp-content/uploads/2020/11/Logitech-Logo-700x394.png",
     features: [
       {
         title: "Ergonomic Design",

@@ -5,7 +5,13 @@ import { Input } from "@/components/ui/input";
 import { Search, Cpu, Smartphone } from "lucide-react";
 import ProductCard from "@/components/products/ProductCard";
 
-export default function ProductList({ computers, smartphones }) {
+export default function ProductList({
+  computers,
+  smartphones,
+  accessory,
+  wearable,
+  component,
+}) {
   const [searchTerm, setSearchTerm] = useState("");
 
   const filterProducts = (products) =>
@@ -17,6 +23,9 @@ export default function ProductList({ computers, smartphones }) {
 
   const filteredComputers = filterProducts(computers);
   const filteredSmartphones = filterProducts(smartphones);
+  const filteredAccessory = filterProducts(accessory);
+  const filteredWearable = filterProducts(wearable);
+  const filteredComponent = filterProducts(component);
 
   return (
     <>
@@ -57,6 +66,48 @@ export default function ProductList({ computers, smartphones }) {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredSmartphones.map((p) => (
+              <ProductCard key={p.slug} product={p} />
+            ))}
+          </div>
+        </section>
+      )}
+      {/* Accessory */}
+      {filteredAccessory.length > 0 && (
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 flex items-center gap-3">
+            <Smartphone className="w-8 h-8 text-green-500" />
+            Accessory
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {filteredAccessory.map((p) => (
+              <ProductCard key={p.slug} product={p} />
+            ))}
+          </div>
+        </section>
+      )}
+      {/* Component */}
+      {filteredComponent.length > 0 && (
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 flex items-center gap-3">
+            <Smartphone className="w-8 h-8 text-green-500" />
+            Components
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {filteredComponent.map((p) => (
+              <ProductCard key={p.slug} product={p} />
+            ))}
+          </div>
+        </section>
+      )}
+      {/* Wearable */}
+      {filteredWearable.length > 0 && (
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 flex items-center gap-3">
+            <Smartphone className="w-8 h-8 text-green-500" />
+            Wearables
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {filteredWearable.map((p) => (
               <ProductCard key={p.slug} product={p} />
             ))}
           </div>

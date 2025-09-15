@@ -6,6 +6,9 @@ export default function ProductsPage() {
   // جميع المنتجات من data
   const computers = allProducts.filter((p) => p.category === "computer");
   const smartphones = allProducts.filter((p) => p.category === "smartphone");
+  const accessory = allProducts.filter((p) => p.category === "accessory");
+  const wearable = allProducts.filter((p) => p.category === "wearable");
+  const component = allProducts.filter((p) => p.category === "component");
 
   return (
     <div className="bg-gray-50 dark:bg-gray-900 min-h-screen">
@@ -20,7 +23,13 @@ export default function ProductsPage() {
         </div>
 
         {/* Client Component للبحث */}
-        <ProductList computers={computers} smartphones={smartphones} />
+        <ProductList
+          computers={computers}
+          smartphones={smartphones}
+          accessory={accessory}
+          wearable={wearable}
+          component={component}
+        />
       </div>
     </div>
   );
