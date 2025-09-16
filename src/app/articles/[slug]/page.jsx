@@ -15,6 +15,22 @@ import ReactMarkdown from "react-markdown";
 import { posts } from "@/data/posts";
 import Image from "next/image";
 
+export async function generateMetadata({ params }) {
+  const article = posts.find((a) => a.slug === params.slug);
+
+  if (!article) {
+    return {
+      title: "Article not found - TechPulse",
+      description: "This article could not be found.",
+    };
+  }
+
+  return {
+    title: `${article.title} - TechPulse`,
+    description: article.excerpt || "Read this article on TechPulse.",
+  };
+}
+
 export default async function PostPage({ params }) {
   const { slug } = await params;
 

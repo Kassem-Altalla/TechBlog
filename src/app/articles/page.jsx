@@ -15,6 +15,11 @@ import { posts } from "@/data/posts";
 import ArticleCard from "@/components/home/ArticleCard";
 import ArticleListItem from "@/components/articles/ArticleListItem";
 
+// export const metadata = {
+//   title: "All Articles - TechPulse",
+//   description: "Browse our latest tech articles, reviews, and tutorials.",
+// };
+
 export default function ArticlesPage() {
   const [postsData, setPostsData] = useState(posts);
 

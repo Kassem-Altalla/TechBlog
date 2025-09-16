@@ -2,6 +2,12 @@ import ProductList from "@/components/products/ProductList";
 import { Cpu, Smartphone } from "lucide-react";
 import { products as allProducts } from "@/data/products";
 
+export const metadata = {
+  title: "Products - TechPulse",
+  description:
+    "Browse the latest tech products with detailed reviews and specifications.",
+};
+
 export default function ProductsPage() {
   // جميع المنتجات من data
   const computers = allProducts.filter((p) => p.category === "computer");

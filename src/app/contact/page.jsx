@@ -4,6 +4,11 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import ContactInfo from "@/components/contact/ContactInfo";
 
+export const metadata = {
+  title: "Contact Us - TechPulse",
+  description: "Get in touch with TechPulse. We'd love to hear from you.",
+};
+
 export default function Contact() {
   return (
     <div className="bg-white dark:bg-gray-900">

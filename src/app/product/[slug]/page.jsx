@@ -8,6 +8,23 @@ import ProductFeatures from "@/components/products/ProductFeatures";
 import ProductInfoSection from "@/components/products/ProductInfoSection";
 import ProductCTA from "@/components/products/ProductCTA";
 
+// توليد الـ metadata ديناميكياً
+export async function generateMetadata({ params }) {
+  const product = products.find((p) => p.slug === params.slug);
+
+  if (!product) {
+    return {
+      title: "Product not found - TechPulse",
+      description: "This product could not be found.",
+    };
+  }
+
+  return {
+    title: `${product.name} - TechPulse Reviews`,
+    description: `Learn more about ${product.name} on TechPulse.`,
+  };
+}
+
 export default async function ProductDetail({ params }) {
   const { slug } = params;
 
